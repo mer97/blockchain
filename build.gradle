@@ -1,0 +1,22 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.4.RELEASE'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'top.leemer'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.alibaba:fastjson:1.2.7'
+    implementation 'org.apache.commons:commons-lang3:3.8.1'
+    implementation 'commons-codec:commons-codec:1.11'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
